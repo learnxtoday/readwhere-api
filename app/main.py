@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     r = requests.get('http://httpbin.org/status/418')
     print(r.text)
-    return ('<pre>' + r.text + '</pre>')
+    return ('<pre> Teapot: ' + r.text + '</pre>')
 
 
 @app.route("/merge")
